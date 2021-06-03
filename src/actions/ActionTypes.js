@@ -1,0 +1,4 @@
+export const CREATE_NEW_BOARD = "CREATE_NEW_BOARD";
+export const CANCEL_NEW_BOARD = "CANCEL_NEW_BOARD";
+export const SUBMIT_NEW_BOARD = "SUBMIT_NEW_BOARD";
+

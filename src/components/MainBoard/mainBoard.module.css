@@ -1,0 +1,12 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+} 
+
+.boardsGroup {
+    display: flex;
+    padding: 60px 35px;
+    flex-wrap: wrap;
+    animation: eMLfYp 300ms linear;
+}
