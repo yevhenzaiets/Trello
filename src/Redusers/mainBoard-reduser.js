@@ -1,5 +1,5 @@
 import { CREATE_NEW_BOARD, CANCEL_NEW_BOARD, SUBMIT_NEW_BOARD } from "../actions/ActionTypes";
-const ACTIVE_BOARD = "ACTIVE_BOARD"
+const SET_ACTIVE_BOARD = "SET_ACTIVE_BOARD"
 
 let initialState = {
     isBoardOpen: false,
@@ -19,12 +19,10 @@ const boardReduser = (state = initialState, {type, payload}) => {
                 boards
             }
         }
-        case ACTIVE_BOARD: {
-            const { newBoard } = payload;
-            const boards = [...state.boards, newBoard]
+        case SET_ACTIVE_BOARD: {
             return {
                 ...state,
-                boards
+                isBoardOpen: true
             }
         }
         case CANCEL_NEW_BOARD: {

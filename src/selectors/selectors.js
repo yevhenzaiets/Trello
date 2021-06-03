@@ -1,3 +1,3 @@
 export const getNewBoard = (state) => state.boardsData.boards
 
-export const getActiveBoard = (state) => state.boardsData
+// export const setActiveBoard = (state) => state.

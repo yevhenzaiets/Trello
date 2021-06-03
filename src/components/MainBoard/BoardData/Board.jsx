@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import s from './board.module.css';
 import CreateBoard from '../CreateBoard/CreateBoard';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 
@@ -27,19 +28,22 @@ export default Board;
 
 // const Board = (props) => {
 
-    // let [mode, setMode] = useState(modes.board)
+//     const dispatch = useDispatch();
+//     const newBoard = useSelector();
 
-    // const dispatch = useDispatch();
-    // const newBoard = useSelector(getNewBoard)
+//     let [mode, setMode] = useState(modes.board)
 
-    // if (mode === modes.board) {
-        // return <div className={s.boardBlock} onClick={() => dispatch(createNewBoard(newBoard))}>
-        //     <div className={s.createNewBoard}>
-        //         <h3>Create a new board...</h3>
-        //     </div>
-        // </div>
-    // }
-    // return <ChangeDesk />
+//     const dispatch = useDispatch();
+//     const newBoard = useSelector(getNewBoard)
+
+//     if (mode === modes.board) {
+//         return <div className={s.boardBlock} onClick={() => dispatch(createNewBoard(newBoard))}>
+//             <div className={s.createNewBoard}>
+//                 <h3>Create a new board...</h3>
+//             </div>
+//         </div>
+//     }
+//     return <ChangeDesk />
 // }
 
 // export default Board;

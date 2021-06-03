@@ -25,7 +25,7 @@ const CreateBoard = (props) => {
     }
 
     const cancelCreating = () => {
-        setMode(modes.changeBoard);
+        setMode(modes.board);
     }
 
     if (mode === modes.board) {
